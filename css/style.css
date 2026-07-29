@@ -86,6 +86,11 @@ ul,ol{list-style:none;}
    accent = 브랜드 컬러는 비텍스트 요소만(칩·버튼·hover·이미지 프레임 라인).
    본문/헤드라인 텍스트는 계속 그레이스케일 그대로, 브랜드 텍스트 색 금지.
    outlined = 구조 구분선은 --border-1(중립 hairline), 이미지 프레임·CTA는 브랜드 라인/--border-2
+
+   섹션 너비: 페이지 전체에서 딱 두 상태만 사용 (셋 이상 섞으면 폭이 들쭉날쭉해 보임)
+     - 풀블리드(.container 없음, width:100%)  → 히어로 비주얼, 워크 하이라이트 그리드, 다크 CTA 배경
+     - 기본 .container(1440px)                → 그 외 전 섹션(헤딩 텍스트 포함) 전부 동일하게
+   .container--narrow/--wide는 styles.css 원본 토큰이라 남겨두지만 이 페이지에선 사용하지 않음
    ========================================================= */
 
 /* ---- nav ---- */
@@ -151,7 +156,7 @@ ul,ol{list-style:none;}
 .card__title{font-size:var(--fs-h3);font-weight:var(--fw-strong);}
 .card__cat{font-size:var(--fs-body-2);color:var(--text-subtle);margin-top:var(--space-1);}
 
-/* ---- clients statement (내로우, centered, text-align:center 1/2) ---- */
+/* ---- clients statement (기본 .container, centered, text-align:center 1/2) ---- */
 .clients{text-align:center;}
 .clients__eyebrow{
   font-size:var(--fs-eyebrow);color:var(--text-subtle);text-transform:uppercase;
@@ -184,7 +189,7 @@ ul,ol{list-style:none;}
   .services__list{grid-column:span 12;}
 }
 
-/* ---- testimonial (내로우) ---- */
+/* ---- testimonial (기본 .container, 카드는 grid-column 인셋으로 좁힘) ---- */
 .testimonial{background:var(--color-primary-050);}
 .testimonial__inner{grid-column:2 / 12;border:1px solid var(--color-brand-line);padding:var(--space-8) var(--space-7);background:var(--color-canvas);}
 .testimonial__quote{font-size:var(--fs-h2);font-weight:var(--fw-base);line-height:1.4;max-width:var(--measure);}
