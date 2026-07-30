@@ -11,8 +11,10 @@ Slashwork, Epic Travel, MIXD, Foliostack, LinkBoard)는 원문 그대로 유지�
 
 `.img` 회색 placeholder 대신 실제 라이프스타일 사진을 사용했습니다. 원본 mikekus.com의 실제 프로젝트
 사진은 확보할 수 없어 [Picsum Photos](https://picsum.photos)(Unsplash 소스, 자유 이용 라이선스)에서
-분위기가 맞는 5장을 골라 `assets/photos/`에 내려받아 사용했습니다 — 실제 Mike Kus의 작업물이 아닌
-자리채움용 라이프스타일 이미지임을 밝힙니다.
+분위기가 맞는 7장을 골라 `assets/photos/`에 내려받아 사용했습니다 — 실제 Mike Kus의 작업물이 아닌
+자리채움용 라이프스타일 이미지임을 밝힙니다. "이미지 비중=높음" 변주에 맞춰 Hero·Work뿐 아니라
+Our Clients·Contact도 이미지 배경(다크 오버레이 0.55~0.6 + 인버스 텍스트)으로 채워서, 순수 텍스트만
+남은 섹션은 Services·Testimonial 둘뿐입니다.
 
 | 위치 | 이미지 |
 |---|---|
@@ -21,6 +23,8 @@ Slashwork, Epic Travel, MIXD, Foliostack, LinkBoard)는 원문 그대로 유지�
 | Slashwork | 책상 위 스마트폰 클로즈업 |
 | Epic Travel | 여름 해변을 즐기는 사람들 |
 | MIXD | 노을 진 바다 위로 날아오르는 새들 |
+| Our Clients (배경) | 사람들로 붐비는 기차역 대합실 |
+| Contact (배경) | 안개 낀 바다 |
 
 ## 이번 변주(Variant) 설정
 
