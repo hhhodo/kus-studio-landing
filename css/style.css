@@ -196,16 +196,14 @@ ul,ol{list-style:none;}
 .testimonial__role{color:var(--text-subtle);}
 @media (max-width:768px){ .testimonial__inner{padding:var(--space-6);} }
 
-/* ---- contact (inverse, dark band) ---- */
-.contact{background:var(--color-primary-900);color:var(--text-default-inverse);}
-.contact__copy{grid-column:1 / 8;}
-.contact__cta{grid-column:8 / 13;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:var(--space-4);}
+/* ---- contact (inverse, dark band, centered — text-align:center 2/2) ----
+   원래 좌측 텍스트 / 우측 버튼 분할은 두 덩어리의 시각적 무게가 너무 달라서(문단 3줄 대
+   버튼 1개) 양끝을 정확히 맞춰도 왼쪽으로 쏠려 보였다. 비대칭 자체를 없애려고 가운데
+   정렬 단일 컬럼으로 변경. */
+.contact{background:var(--color-primary-900);color:var(--text-default-inverse);text-align:center;}
+.contact__inner{display:flex;flex-direction:column;align-items:center;gap:var(--space-6);}
 .contact__title{font-size:var(--fs-h0);font-weight:var(--fw-strong);letter-spacing:var(--display-tracking);text-wrap:balance;}
-.contact__body{margin-top:var(--space-5);font-size:var(--fs-body-1);color:var(--text-subtle-inverse);max-width:var(--measure);}
-@media (max-width:768px){
-  .contact__copy,.contact__cta{grid-column:1/13;}
-  .contact__cta{align-items:flex-start;margin-top:var(--space-6);}
-}
+.contact__body{font-size:var(--fs-body-1);color:var(--text-subtle-inverse);max-width:var(--measure);}
 
 /* ---- footer ----
    4개 컬럼을 --grid-gutter-lg 균등폭 12분할 대신 flex space-between으로 배치:
