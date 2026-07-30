@@ -187,14 +187,14 @@ ul,ol{list-style:none;}
   .services__list{grid-column:span 12;}
 }
 
-/* ---- testimonial (기본 .container, 카드는 grid-column 인셋으로 좁힘) ---- */
+/* ---- testimonial (카드도 풀블리드 — 테두리/패딩으로만 구분, 인셋 마진 없음) ---- */
 .testimonial{background:var(--color-primary-050);}
-.testimonial__inner{grid-column:2 / 12;border:1px solid var(--color-brand-line);padding:var(--space-8) var(--space-7);background:var(--color-canvas);}
+.testimonial__inner{grid-column:1 / 13;border:1px solid var(--color-brand-line);padding:var(--space-8) var(--space-7);background:var(--color-canvas);}
 .testimonial__quote{font-size:var(--fs-h2);font-weight:var(--fw-base);line-height:1.4;max-width:var(--measure);}
 .testimonial__by{margin-top:var(--space-6);font-size:var(--fs-body-2);}
 .testimonial__name{font-weight:var(--fw-strong);}
 .testimonial__role{color:var(--text-subtle);}
-@media (max-width:768px){ .testimonial__inner{grid-column:1/13;padding:var(--space-6);} }
+@media (max-width:768px){ .testimonial__inner{padding:var(--space-6);} }
 
 /* ---- contact (inverse, dark band) ---- */
 .contact{background:var(--color-primary-900);color:var(--text-default-inverse);}
