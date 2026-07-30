@@ -199,7 +199,7 @@ ul,ol{list-style:none;}
 /* ---- contact (inverse, dark band) ---- */
 .contact{background:var(--color-primary-900);color:var(--text-default-inverse);}
 .contact__copy{grid-column:1 / 8;}
-.contact__cta{grid-column:8 / 13;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:var(--space-4);}
+.contact__cta{grid-column:8 / 13;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:var(--space-4);}
 .contact__title{font-size:var(--fs-h0);font-weight:var(--fw-strong);letter-spacing:var(--display-tracking);text-wrap:balance;}
 .contact__body{margin-top:var(--space-5);font-size:var(--fs-body-1);color:var(--text-subtle-inverse);max-width:var(--measure);}
 @media (max-width:768px){
@@ -207,9 +207,13 @@ ul,ol{list-style:none;}
   .contact__cta{align-items:flex-start;margin-top:var(--space-6);}
 }
 
-/* ---- footer ---- */
+/* ---- footer ----
+   4개 컬럼을 --grid-gutter-lg 균등폭 12분할 대신 flex space-between으로 배치:
+   첫 컬럼은 왼쪽 끝, 마지막 컬럼은 오른쪽 끝에 내용 크기만큼 딱 붙고 가운데 둘이
+   균등 분배된다. 넓은 화면에서 마지막 컬럼 텍스트가 오른쪽 거터 안쪽에서 끝나지 않고
+   중간에서 멈춰 버리는(=오른쪽이 텅 비어 왼쪽으로 쏠려 보이는) 문제를 근본적으로 없앤다. */
 .footer{border-top:var(--border-hairline);}
-.footer__col{grid-column:span 3;}
+.footer__row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--space-7) var(--grid-gutter-lg);}
 .footer__brand{font-size:var(--fs-h3);font-weight:var(--fw-strong);}
 .footer__tag{margin-top:var(--space-3);font-size:var(--fs-body-2);color:var(--text-subtle);}
 .footer__heading{font-size:var(--fs-badge);text-transform:uppercase;letter-spacing:0.08em;color:var(--text-subtle);margin-bottom:var(--space-4);}
@@ -220,9 +224,10 @@ ul,ol{list-style:none;}
 .footer__email{font-size:var(--fs-body-2);font-weight:var(--fw-strong);border-bottom:1px solid var(--color-brand-line);padding-bottom:2px;display:inline-block;transition:color .15s ease,border-color .15s ease;}
 .footer__email:hover{color:var(--color-brand);border-color:var(--color-brand);}
 .footer__copy{font-size:var(--fs-caption);color:var(--text-subtle);}
+.footer__col:last-child{text-align:right;}
 @media (max-width:768px){
-  .footer__col{grid-column:span 6;}
-  .footer .grid{row-gap:var(--space-7);}
+  .footer__row{flex-direction:column;gap:var(--space-7);}
+  .footer__col:last-child{text-align:left;}
 }
 
 /* ---- scroll reveal (js/main.js 훅) ---- */
