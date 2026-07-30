@@ -1,10 +1,26 @@
-# Kus—Studio by Mike Kus — 랜딩페이지
+# 커스—스튜디오 by 마이크 커스 — 랜딩페이지
 
 **Live: https://hhhodo.github.io/kus-studio-landing/**
 
 [mikekus.com](https://mikekus.com/)의 실제 카피(히어로 문구, 프로젝트 목록, 서비스, 클라이언트 추천글, 푸터)를
-그대로 참고해 재구성한 단일 페이지 랜딩페이지입니다. `styles.css`(디자인 토큰)와 `CHEATSHEET_16.md`
-(작성용 단일 참조 요약)의 규칙을 그대로 따랐습니다.
+전부 한국어로 번역해 재구성한 단일 페이지 랜딩페이지입니다. `styles.css`(디자인 토큰)와 `CHEATSHEET_16.md`
+(작성용 단일 참조 요약)의 규칙을 그대로 따랐습니다. 브랜드/프로젝트 고유명사(Kus—Studio, Just Phil,
+Slashwork, Epic Travel, MIXD, Foliostack, LinkBoard)는 원문 그대로 유지했습니다.
+
+## 이미지
+
+`.img` 회색 placeholder 대신 실제 라이프스타일 사진을 사용했습니다. 원본 mikekus.com의 실제 프로젝트
+사진은 확보할 수 없어 [Picsum Photos](https://picsum.photos)(Unsplash 소스, 자유 이용 라이선스)에서
+분위기가 맞는 5장을 골라 `assets/photos/`에 내려받아 사용했습니다 — 실제 Mike Kus의 작업물이 아닌
+자리채움용 라이프스타일 이미지임을 밝힙니다.
+
+| 위치 | 이미지 |
+|---|---|
+| 히어로 | 가파른 언덕에 형형색색 건물이 늘어선 해안 마을 |
+| Just Phil | 고요한 호수 위 요트 (모노톤) |
+| Slashwork | 책상 위 스마트폰 클로즈업 |
+| Epic Travel | 여름 해변을 즐기는 사람들 |
+| MIXD | 노을 진 바다 위로 날아오르는 새들 |
 
 ## 이번 변주(Variant) 설정
 
@@ -35,6 +51,7 @@ index.html          메인 페이지 1개 (Hero → Work Highlights → Our Clie
 css/style.css        디자인 토큰(styles.css 원본) + 컴포넌트 스타일
 js/main.js           스크롤 리빌(IntersectionObserver), reduced-motion 대응
 assets/favicon.svg   파비콘
+assets/photos/       히어로·워크 하이라이트용 라이프스타일 사진 5장
 ```
 
 ## 로컬 실행

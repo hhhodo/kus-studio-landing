@@ -64,6 +64,7 @@ ul,ol{list-style:none;}
 .section{padding-block:var(--space-section);}
 
 .img{background:var(--color-placeholder);display:block;width:100%;}
+img.hero__visual,img.card__media{display:block;width:100%;object-fit:cover;background:var(--color-placeholder);}
 .img--16-9{aspect-ratio:16/9;} .img--4-3{aspect-ratio:4/3;} .img--1-1{aspect-ratio:1/1;}
 
 @media (max-width:1024px){
